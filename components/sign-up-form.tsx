@@ -119,7 +119,8 @@ export function SignUpForm({
                   onChange={(e) => setRole(e.target.value as Role)}
                   className={cn(
                     'flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors',
-                    'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring'
+                    'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring',
+                    'dark:text-foreground [&>option]:text-black'
                   )}
                 >
                   <option value={Role.FARMER}>Farmer</option>
